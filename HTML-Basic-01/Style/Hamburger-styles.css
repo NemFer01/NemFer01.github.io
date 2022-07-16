@@ -1,0 +1,53 @@
+
+@font-face {
+    font-family: "pacifico";
+    src: url(../Fonts/Pacifico/Pacifico-Regular.ttf);
+    font-weight: 400;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+html {
+    font-family: "pacifico", sans-serif;
+    color: blue;
+    
+}
+
+img {
+    width: 200px;
+}
+
+p {
+    font-size: 24px;
+    
+
+}
+
+h2 {
+    color: blue;
+  
+
+
+}
+
+/* unvisited link */
+    a:link {
+        color: red;
+        
+    }
+  
+/* visited link */
+    a:visited {
+        color: green;
+    }
+  
+/* mouse over link */
+    a:hover {
+        color: hotpink;
+    }
+  
+/* selected link */
+    a:active {
+        color: blue;
+    }
