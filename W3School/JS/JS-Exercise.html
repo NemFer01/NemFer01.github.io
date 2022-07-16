@@ -58,11 +58,61 @@
 
             (myFunction is stored in "jsex.js")</p>
 
+    
+    <div>        
+    <h3>8. JS output   </h3>
+        <p>
+            <ul>
+                <li>Writing into an HTML element, using innerHTML.</li>
+                <li>Writing into an HTML element, using innerHTML.</li>
+                <li>Writing into the HTML output using document.write().</li>
+                <li>Writing into an alert box, using window.alert().</li>
+                <li>Writing into the browser console, using console.log().</li>
+            </ul>
+        </p>
+        <p id="demo8"></p>
+        <script>
+            document.getElementById("demo8").innerHTML = 5 + 6 + "= 5+6 Addition in JS";
+        </script>
+
+        <p id="demo81">Never call document.write after the document has finished loading.
+            It will overwrite the whole document.</p>
+        <script>
+            document.write(5+6)
+        </script>
+
+        <p id="demo82">If you call document.write after an HTML document is loaded, will delete all existing HTML</p>
+        <button type="button" onclick="document.write(5+6)">Try it</button>
+
+        <p>(The document.write() method should only be used for testing.)</p>
+        <button type="button" onclick="alertfunction()">Alert</button>
+        <p>Alert function button</p>
+        
+        <p> JavaScript does not have any print object or print methods. 
+            You cannot access output devices from JavaScript.
+            The only exception is that you can call the window.print() 
+            method in the browser to print the content of the current window.
+        </p>
+        <button type="button" onclick="window.print()">Print this page</button>
+    
+        <H3>9. JS statements</H3>
+        <p id="demo9"></p>
+            <script>
+            let x, y, z;  // Statement 1
+            x = 5;        // Statement 2
+            y = 6;        // Statement 3
+            z = x + y;    // Statement 4
+
+            document.getElementById("demo9").innerHTML = "The value of z is " + z + ".";  
+            </script>
+        
+        <p id="demo91"></p>
+        <button type="button" onclick="statementfunction()">Try it</button>
+       
+
+    </div>
+
+    
     <script src="jsex.js"></script>
-
-    <h3>8. </h3>
-
-
-
 </body>
 </html>
