@@ -94,6 +94,8 @@
             method in the browser to print the content of the current window.
         </p>
         <button type="button" onclick="window.print()">Print this page</button>
+
+       
     
         <H3>9. JS statements</H3>
         <p id="demo9"></p>
@@ -109,8 +111,176 @@
         <p id="demo91"></p>
         <button type="button" onclick="statementfunction()">Try it</button>
         
+
+        <h3>10. JS Hoisting</h3>           
+            <p>With <b>const</b>, you cannot use a variable before it is declared:</p>
+            <p id="demo10"></p>
+            <script>
+                try {
+                alert(carName);
+                const carName = "Volvo";
+                }
+                catch (err) {
+                document.getElementById("demo10").innerHTML = err;
+                }
+            </script>
+                    
+        <H3>11. JS operators</H3>            
         
-        
+            <table>
+                <caption>JS Arithmetic Operators</caption>
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>+</td>
+                        <td>Addition</td>
+                    </tr>
+                    <tr>
+                        <td>-</td>
+                        <td>Subtraction</td>
+                    </tr>
+                    <tr>
+                        <td>*</td>
+                        <td>Multiplication</td>
+                    </tr>
+                    <tr>
+                        <td>**</td>
+                        <td>Exponentiation (ES2016)</td>
+                    </tr>
+                    <tr>
+                        <td>/</td>
+                        <td>Division</td>
+                    </tr>
+                    <tr>
+                        <td>%</td>
+                        <td>Modulus (Division remainder)</td>
+                    </tr>
+                    <tr>
+                        <td>++</td>
+                        <td>Increment</td>
+                    </tr>
+                    <tr>
+                        <td>--</td>
+                        <td>Decrement</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+            <table>
+                <caption>JS Assignment Operators</caption>
+                <thead>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Example</th>
+                        <th>Same As</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>=</td>
+                        <td>x = y</td>
+                        <td>x = y</td>
+                    </tr>
+                    <tr>
+                        <td>+=</td>
+                        <td>x += y</td>
+                        <td>x = x + y</td>
+                    </tr>
+                    <tr>
+                        <td>-=</td>
+                        <td>x -= y</td>
+                        <td>x = x - y</td>
+                    </tr>
+                    <tr>
+                        <td>*=</td>
+                        <td>x *= y</td>
+                        <td>x = x * y</td>
+                    </tr>
+                    <tr>
+                        <td>**=</td>
+                        <td>x **= y</td>
+                        <td>x = x ** y</td>
+                    </tr>
+                    <tr>
+                        <td>/=</td>
+                        <td>x /= y</td>
+                        <td>x = x / y</td>
+                    </tr>
+                    <tr>
+                        <td>%=</td>
+                        <td>x %= y</td>
+                        <td>x = x % y</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+        <h3>12. JS string operators</h3>
+            <p>The += assignment operator can also be used to add (concatenate) strings.</p>
+            <p id="demo12"></p>
+            <script>
+                let text1 = "What a very";
+                text1 += "nice day";
+                document.getElementById("demo12").innerHTML = text1;
+                document.getElementById("demo12").style.backgroundColor='lightblue';
+                document.getElementById("demo12").style.display='inline';
+            </script>
+
+        <h3>12.2 JS Comparison Operators</h3>
+
+            <table>
+                <caption>Comparison operators</caption>
+                <tbody>
+                    <tr>
+                        <th>Operator</th>
+                        <th>Descriptio </th>
+                    </tr>
+                    <tr>
+                        <td> == </td>
+                        <td>equal to</td>
+                    </tr>
+                    <tr>
+                        <td> === </td>
+                        <td>equal value and equal type</td>
+                    </tr>
+                    <tr>
+                        <td> != </td>
+                        <td>not equal</td>
+                    </tr>
+                    <tr>
+                        <td> !== </td>
+                        <td>not equal value or not equal type·</td>
+                    </tr>
+                    <tr>
+                        <td> > </td>
+                        <td>greater than</td>
+                    </tr>
+                    <tr>
+                        <td> < </td>
+                        <td>less than</td>
+                    </tr>
+                    <tr>
+                        <td> >= </td>
+                        <td>greater than or equal to</td>
+                    </tr>
+                    <tr>
+                        <td> <= </td>
+                        <td> less than or equal to</td>
+                    </tr >
+                    <tr>
+                        <td>?</td>
+                        <td>ternary operator</td >
+                    </tr>
+                </tbody>
+                    
+
+            </table>
+
 
     </div>
 
@@ -118,3 +288,5 @@
     <script src="jsex.js"></script>
 </body>
 </html>
+
+
